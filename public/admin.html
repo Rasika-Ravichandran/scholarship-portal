@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Admin Panel</h1>
+
+  <div class="form-container">
+    <h2>Add Scholarship</h2>
+    <input id="sch-title" placeholder="Title" />
+    <input id="sch-desc" placeholder="Description" />
+    <input id="sch-gpa" placeholder="Min GPA" />
+    <input id="sch-course" placeholder="Course" />
+    <input id="sch-deadline" type="date" />
+    <button onclick="addScholarship()">Add</button>
+  </div>
+
+  <h2>Applications</h2>
+  <div id="app-list"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
