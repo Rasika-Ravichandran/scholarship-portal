@@ -9,8 +9,8 @@ const path = require("path");
 const fs = require("fs");
 
 const app = express();
-const PORT = 5000;
-const SECRET = "your_jwt_secret";
+const PORT = process.env.PORT || 5000; // Use Railway's dynamic port or fallback to 5000
+const SECRET = process.env.JWT_SECRET || "your_jwt_secret"; // Optional: you can set this as an env variable
 
 // Middleware
 app.use(cors());
@@ -34,7 +34,7 @@ let db;
   // Set busy timeout to 5 seconds
   await db.run("PRAGMA busy_timeout = 5000");
 
-  // Create tables if not exist
+  // Create tables if they don't exist
   await db.run(`
     CREATE TABLE IF NOT EXISTS users (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -169,5 +169,5 @@ app.get("/applications", async (req, res) => {
 
 // =================== START SERVER ===================
 app.listen(PORT, () =>
-  console.log(`Server running on http://localhost:${PORT}`)
+  console.log(`Server running on port ${PORT}`)
 );
