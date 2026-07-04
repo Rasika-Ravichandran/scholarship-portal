@@ -1,0 +1,63 @@
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f8fafc;
+}
+
+/* Navbar */
+
+.navbar-brand{
+    font-size:1.6rem;
+}
+
+.nav-link{
+    font-weight:500;
+    margin:0 8px;
+}
+
+.nav-link:hover{
+    color:#0d6efd;
+}
+
+/* Hero */
+
+.hero{
+    padding:90px 0;
+}
+
+.hero h1{
+    font-size:3.6rem;
+    font-weight:700;
+    color:#1e293b;
+    line-height:1.2;
+}
+
+.hero p{
+    font-size:1.1rem;
+    color:#64748b;
+    line-height:1.8;
+}
+
+.hero-img{
+    max-width:500px;
+}
+
+.btn{
+    border-radius:10px;
+    padding:12px 24px;
+}
+
+.badge{
+    font-size:.9rem;
+}
+
+@media(max-width:992px){
+
+.hero{
+    text-align:center;
+}
+
+.hero h1{
+    font-size:2.7rem;
+}
+
+}
