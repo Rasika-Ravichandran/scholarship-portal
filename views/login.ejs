@@ -1,0 +1,184 @@
+<%- include("partials/navbar") %>
+
+<link rel="stylesheet" href="/css/login.css">
+
+<section class="login-section">
+
+    <div class="container">
+
+        <div class="login-wrapper">
+
+            <div class="row g-0">
+
+                <!-- Left Side -->
+
+                <div class="col-lg-6">
+
+                    <div class="login-left">
+
+                        <div class="circle circle1"></div>
+                        <div class="circle circle2"></div>
+                        <div class="circle circle3"></div>
+
+                        <div class="left-content">
+
+                            <span class="badge-custom">
+                                🎓 ScholarHub
+                            </span>
+
+                            <h1>
+                                Welcome
+                                <br>
+                                Back!
+                            </h1>
+
+                            <p>
+
+                                Login to discover scholarships,
+                                manage your applications,
+                                and achieve your academic dreams.
+
+                            </p>
+
+                            <img
+                                src="/images/login.jpg"
+                                class="student-img img-fluid"
+                                alt="Student">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Right Side -->
+
+                <div class="col-lg-6">
+
+                    <div class="login-right">
+
+                        <div class="login-card">
+
+                            <h2>Login</h2>
+
+                            <p class="text-muted mb-4">
+
+                                Sign in to continue
+
+                            </p>
+
+                            <form action="/login" method="POST">
+
+                                <div class="mb-3">
+
+                                    <label class="form-label">
+
+                                        Email Address
+
+                                    </label>
+
+                                    <div class="input-group">
+
+                                        <span class="input-group-text">
+
+                                            <i class="fa-solid fa-envelope"></i>
+
+                                        </span>
+
+                                        <input
+                                            type="email"
+                                            class="form-control"
+                                            placeholder="Enter Email"
+                                            required>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="mb-3">
+
+                                    <label class="form-label">
+
+                                        Password
+
+                                    </label>
+
+                                    <div class="input-group">
+
+                                        <span class="input-group-text">
+
+                                            <i class="fa-solid fa-lock"></i>
+
+                                        </span>
+
+                                        <input
+                                            type="password"
+                                            class="form-control"
+                                            placeholder="Enter Password"
+                                            required>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+
+                                    <div class="form-check">
+
+                                        <input
+                                            class="form-check-input"
+                                            type="checkbox">
+
+                                        <label class="form-check-label">
+
+                                            Remember Me
+
+                                        </label>
+
+                                    </div>
+
+                                    <a href="#"
+                                       class="forgot-link">
+
+                                        Forgot Password?
+
+                                    </a>
+
+                                </div>
+
+                                <button
+                                    class="btn btn-login w-100">
+
+                                    Login
+
+                                </button>
+
+                            </form>
+
+                            <div class="signup-text">
+
+                                Don't have an account?
+
+                                <a href="/register">
+
+                                    Register
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<%- include("partials/footer") %>

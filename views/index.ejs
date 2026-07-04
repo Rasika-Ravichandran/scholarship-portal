@@ -1,50 +1,108 @@
-<%- include("partials/header") %>
 <%- include("partials/navbar") %>
+<link href="/css/index.css" rel="stylesheet"/>
+<main>
 
-<!-- Hero Section -->
-<section class="hero">
-  <div class="container">
-    <div class="row align-items-center">
+<section class="hero-section">
 
-      <!-- Left Content -->
-      <div class="col-lg-6">
-        <span class="badge bg-primary mb-3 px-3 py-2">
-          🎓 Trusted Scholarship Platform
-        </span>
+    <div class="hero-overlay"></div>
 
-        <h1>
-          Unlock Your <span class="text-primary">Dream Education</span>
-        </h1>
+    <div class="container">
 
-        <p class="mt-4">
-          Find scholarships from universities, government organizations,
-          and private institutions. Apply online and track your application
-          with ease.
-        </p>
+        <div class="row align-items-center min-vh-100">
 
-        <div class="mt-4">
-          <a href="/scholarships" class="btn btn-primary btn-lg me-3">
-            Browse Scholarships
-          </a>
+            <!-- Left -->
 
-          <a href="/about" class="btn btn-outline-primary btn-lg">
-            Learn More
-          </a>
+            <div class="col-lg-6 hero-content">
+
+                <span class="hero-tag">
+                    🎓 Scholarship Portal 2026
+                </span>
+
+                <h1 class="hero-title mt-4">
+
+                    Empowering Students
+                    <br>
+
+                    <span>One Scholarship</span>
+
+                    at a Time.
+
+                </h1>
+
+                <p class="hero-desc">
+
+                    Discover government, private, and university scholarships,
+                    apply online in minutes, upload your documents securely,
+                    and track your application status—all in one place.
+
+                </p>
+
+                <div class="mt-5 d-flex flex-wrap gap-3">
+
+                    <a href="/scholarships"
+                        class="btn btn-primary-custom">
+
+                        Explore Scholarships
+
+                    </a>
+
+                    <a href="/register"
+                        class="btn btn-light-custom">
+
+                        Apply Now
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Right -->
+
+            <div class="col-lg-6 hero-image">
+
+                <img
+                    src="/images/stud.jpg"
+                    class="hero-img img-fluid">
+
+                <div class="floating-card card-one">
+
+                    <i class="fa-solid fa-award"></i>
+
+                    <h5>₹50,000</h5>
+
+                    <small>Average Award</small>
+
+                </div>
+
+                <div class="floating-card card-two">
+
+                    <i class="fa-solid fa-user-graduate"></i>
+
+                    <h5>5,000+</h5>
+
+                    <small>Students</small>
+
+                </div>
+
+                <div class="floating-card card-three">
+
+                    <i class="fa-solid fa-book-open"></i>
+
+                    <h5>250+</h5>
+
+                    <small>Scholarships</small>
+
+                </div>
+
+            </div>
+
         </div>
-      </div>
-
-      <!-- Right Image -->
-      <div class="col-lg-6 text-center mt-5 mt-lg-0">
-        <img
-          src="/images/hero.png"
-          class="img-fluid hero-img"
-          alt="Scholarship Illustration"
-        >
-      </div>
 
     </div>
-  </div>
+
 </section>
 
+</main>
+
 <%- include("partials/footer") %>
-<%- include("partials/scripts") %>

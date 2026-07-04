@@ -1,0 +1,403 @@
+/* =====================================
+            LOGIN PAGE
+===================================== */
+
+body{
+    background:#f5f7fb;
+}
+
+/* Section */
+
+.login-section{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:120px 0 80px;
+
+    background:#f5f7fb;
+
+}
+
+/* Wrapper */
+
+.login-wrapper{
+
+    overflow:hidden;
+
+    border-radius:35px;
+
+    background:#fff;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.12);
+
+}
+
+/* =========================
+        LEFT PANEL
+========================= */
+
+.login-left{
+
+    position:relative;
+
+    height:100%;
+
+    min-height:700px;
+
+    background:linear-gradient(135deg,#5b21b6,#7c3aed,#8b5cf6);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:hidden;
+
+}
+
+/* Wave Divider */
+
+.login-left::after{
+
+    content:"";
+
+    position:absolute;
+
+    right:-130px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:260px;
+
+    height:700px;
+
+    background:white;
+
+    border-radius:50%;
+
+}
+
+/* Content */
+
+.left-content{
+
+    position:relative;
+
+    z-index:2;
+
+    text-align:center;
+
+    color:#fff;
+
+    padding:50px;
+
+}
+
+.badge-custom{
+
+    display:inline-block;
+
+    padding:10px 22px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(10px);
+
+    margin-bottom:25px;
+
+}
+
+.left-content h1{
+
+    font-size:3.6rem;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+.left-content p{
+
+    font-size:1.1rem;
+
+    opacity:.9;
+
+    line-height:1.8;
+
+    max-width:420px;
+
+    margin:auto;
+
+}
+
+.student-img{
+
+    width:360px;
+
+    margin-top:45px;
+
+    animation:float 5s ease-in-out infinite;
+
+}
+
+/* Floating Circles */
+
+.circle{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+}
+
+.circle1{
+
+    width:280px;
+
+    height:280px;
+
+    top:-80px;
+
+    left:-70px;
+
+}
+
+.circle2{
+
+    width:180px;
+
+    height:180px;
+
+    bottom:50px;
+
+    left:70px;
+
+}
+
+.circle3{
+
+    width:120px;
+
+    height:120px;
+
+    right:120px;
+
+    top:120px;
+
+}
+
+/* =========================
+        RIGHT PANEL
+========================= */
+
+.login-right{
+
+    min-height:700px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#fff;
+
+}
+
+.login-card{
+
+    width:100%;
+
+    max-width:430px;
+
+}
+
+.login-card h2{
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+    color:#2e1065;
+
+}
+
+/* Inputs */
+
+.form-label{
+
+    font-weight:600;
+
+}
+
+.input-group{
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0 5px 18px rgba(0,0,0,.05);
+
+}
+
+.input-group-text{
+
+    background:#f3e8ff;
+
+    border:none;
+
+    color:#6d28d9;
+
+}
+
+.form-control{
+
+    border:none;
+
+    padding:14px;
+
+    box-shadow:none !important;
+
+}
+
+.form-control:focus{
+
+    border:none;
+
+}
+
+/* Forgot */
+
+.forgot-link{
+
+    text-decoration:none;
+
+    color:#6d28d9;
+
+    font-weight:600;
+
+}
+
+/* Button */
+
+.btn-login{
+
+    background:#6d28d9;
+
+    color:#fff;
+
+    padding:14px;
+
+    border-radius:15px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-login:hover{
+
+    background:#5b21b6;
+
+    color:#fff;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 15px 30px rgba(109,40,217,.3);
+
+}
+
+/* Register */
+
+.signup-text{
+
+    margin-top:30px;
+
+    text-align:center;
+
+}
+
+.signup-text a{
+
+    color:#6d28d9;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+}
+
+/* Animation */
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+.login-left{
+
+    display:none;
+
+}
+
+.login-right{
+
+    min-height:auto;
+
+    padding:60px 30px;
+
+}
+
+.login-wrapper{
+
+    border-radius:25px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.login-card{
+
+    max-width:100%;
+
+}
+
+}

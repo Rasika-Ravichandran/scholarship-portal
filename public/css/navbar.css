@@ -1,0 +1,147 @@
+/* Navbar */
+
+.custom-navbar{
+
+    background:linear-gradient(135deg,#5b21b6,#7c3aed,#8b5cf6);
+
+    padding:14px 0;
+
+    backdrop-filter:blur(12px);
+
+    box-shadow:0 8px 25px rgba(0,0,0,.12);
+
+}
+
+/* Logo */
+
+.navbar-brand{
+
+    color:#fff !important;
+
+    font-size:1.5rem;
+
+    font-weight:600;
+
+}
+
+.logo-icon{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.18);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#fff;
+
+    font-size:18px;
+
+}
+
+/* Links */
+
+.nav-link{
+
+    color:rgba(255,255,255,.85)!important;
+
+    margin:0 12px;
+
+    font-weight:500;
+
+    position:relative;
+
+    transition:.3s;
+
+}
+
+.nav-link:hover,
+.nav-link.active{
+
+    color:#fff!important;
+
+}
+
+.nav-link::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:0;
+
+    width:0;
+
+    height:2px;
+
+    background:#fff;
+
+    transition:.3s;
+
+}
+
+.nav-link:hover::after,
+.nav-link.active::after{
+
+    width:100%;
+
+}
+
+/* Buttons */
+
+.btn-login{
+
+    color:#fff;
+
+    border:1px solid rgba(255,255,255,.35);
+
+    border-radius:30px;
+
+    padding:8px 22px;
+
+}
+
+.btn-login:hover{
+
+    background:rgba(255,255,255,.15);
+
+    color:#fff;
+
+}
+
+.btn-register{
+
+    background:#fff;
+
+    color:#6d28d9;
+
+    border-radius:30px;
+
+    padding:8px 22px;
+
+    font-weight:600;
+
+}
+
+.btn-register:hover{
+
+    background:#f3e8ff;
+
+    color:#5b21b6;
+
+}
+
+.navbar-toggler{
+
+    color:white;
+
+}
