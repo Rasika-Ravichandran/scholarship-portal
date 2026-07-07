@@ -1,184 +1,123 @@
-<%- include("partials/navbar") %>
-
-<link rel="stylesheet" href="/css/login.css">
-
-<section class="login-section">
-
-    <div class="container">
-
-        <div class="login-wrapper">
-
-            <div class="row g-0">
-
-                <!-- Left Side -->
-
-                <div class="col-lg-6">
-
-                    <div class="login-left">
-
-                        <div class="circle circle1"></div>
-                        <div class="circle circle2"></div>
-                        <div class="circle circle3"></div>
-
-                        <div class="left-content">
-
-                            <span class="badge-custom">
-                                🎓 ScholarHub
-                            </span>
-
-                            <h1>
-                                Welcome
-                                <br>
-                                Back!
-                            </h1>
-
-                            <p>
-
-                                Login to discover scholarships,
-                                manage your applications,
-                                and achieve your academic dreams.
-
-                            </p>
-
-                            <img
-                                src="/images/login.jpg"
-                                class="student-img img-fluid"
-                                alt="Student">
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <!-- Right Side -->
-
-                <div class="col-lg-6">
-
-                    <div class="login-right">
-
-                        <div class="login-card">
-
-                            <h2>Login</h2>
-
-                            <p class="text-muted mb-4">
-
-                                Sign in to continue
-
-                            </p>
-
-                            <form action="/login" method="POST">
-
-                                <div class="mb-3">
-
-                                    <label class="form-label">
-
-                                        Email Address
-
-                                    </label>
-
-                                    <div class="input-group">
-
-                                        <span class="input-group-text">
-
-                                            <i class="fa-solid fa-envelope"></i>
-
-                                        </span>
-
-                                        <input
-                                            type="email"
-                                            class="form-control"
-                                            placeholder="Enter Email"
-                                            required>
-
-                                    </div>
-
-                                </div>
-
-                                <div class="mb-3">
-
-                                    <label class="form-label">
-
-                                        Password
-
-                                    </label>
-
-                                    <div class="input-group">
-
-                                        <span class="input-group-text">
-
-                                            <i class="fa-solid fa-lock"></i>
-
-                                        </span>
-
-                                        <input
-                                            type="password"
-                                            class="form-control"
-                                            placeholder="Enter Password"
-                                            required>
-
-                                    </div>
-
-                                </div>
-
-                                <div class="d-flex justify-content-between align-items-center mb-4">
-
-                                    <div class="form-check">
-
-                                        <input
-                                            class="form-check-input"
-                                            type="checkbox">
-
-                                        <label class="form-check-label">
-
-                                            Remember Me
-
-                                        </label>
-
-                                    </div>
-
-                                    <a href="#"
-                                       class="forgot-link">
-
-                                        Forgot Password?
-
-                                    </a>
-
-                                </div>
-
-                                <button
-                                    class="btn btn-login w-100">
-
-                                    Login
-
-                                </button>
-
-                            </form>
-
-                            <div class="signup-text">
-
-                                Don't have an account?
-
-                                <a href="/register">
-
-                                    Register
-
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ScholarHub | User Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+
+  <div class="login-wrapper">
+    <div class="login-panel">
+
+      <!-- LEFT SIDE -->
+      <div class="panel-left">
+        <div class="bg-shapes">
+          <span class="shape shape-1"></span>
+          <span class="shape shape-2"></span>
+          <span class="shape shape-3"></span>
+          <span class="shape shape-4"></span>
+          <span class="dot dot-1"></span>
+          <span class="dot dot-2"></span>
+          <span class="dot dot-3"></span>
         </div>
+
+        <div class="left-content">
+          <div class="brand-row">
+            <span class="brand-icon">🎓</span>
+            <span class="brand-name">ScholarHub</span>
+          </div>
+
+          <h1 class="left-title">Scholarship Portal</h1>
+          <p class="left-subtitle">Unlock Opportunities, <span>Build Your Future</span></p>
+          <span class="title-underline"></span>
+
+          <p class="left-desc">
+            Welcome to the Scholarship Portal. Login to explore scholarships,
+            track applications, and achieve your academic goals.
+          </p>
+
+          <ul class="feature-list">
+            <li>
+              <span class="feature-icon">🔍</span>
+              <div>
+                <h4>Find Scholarships</h4>
+                <p>Discover scholarships that match your profile.</p>
+              </div>
+            </li>
+            <li>
+              <span class="feature-icon">📝</span>
+              <div>
+                <h4>Easy Application</h4>
+                <p>Apply online with a simple and secure process.</p>
+              </div>
+            </li>
+            <li>
+              <span class="feature-icon">🏆</span>
+              <div>
+                <h4>Achieve Your Dreams</h4>
+                <p>Get financial support and focus on your future.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="badge-shield">🛡️</div>
+
+        <div class="illustration">
+          <div class="book-illustration">
+            <div class="cap">🎓</div>
+            <div class="book">📖</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="panel-right">
+        <div class="login-logo">
+          <div class="wreath">🎓</div>
+        </div>
+        <h2 class="login-title">USER LOGIN</h2>
+        <p class="login-subtitle">Welcome back! Please login to continue.</p>
+
+        <form action="/login" method="POST" class="login-form">
+          <div class="input-group">
+            <span class="input-icon">👤</span>
+            <input type="text" name="username" placeholder="Username / Email" required />
+          </div>
+
+          <div class="input-group">
+            <span class="input-icon">🔒</span>
+            <input type="password" name="password" placeholder="Password" required />
+          </div>
+
+          <div class="form-row">
+            <label class="remember-me">
+              <input type="checkbox" name="remember" checked />
+              Remember Me
+            </label>
+            <a href="/forgot-password" class="forgot-link">Forgot password?</a>
+          </div>
+
+          <button type="button" onclick="window.location.href='/findscholarship'" class="btn btn-login w-100">
+              Login
+          </button>
+        </form>
+
+        <div class="divider"><span>OR</span></div>
+
+        <a href="/register" class="btn-create">
+          <span class="icon-plus">➕👤</span> Create New Account
+        </a>
+      </div>
 
     </div>
 
-</section>
+    <p class="footer-tagline">🛡️ Empowering Students, Enriching Futures.</p>
+  </div>
 
-<%- include("partials/footer") %>
+</body>
+</html>

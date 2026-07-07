@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register - ScholarHub</title>
+  <link rel="stylesheet" href="/css/register.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="register-wrapper">
+
+    <!-- Left panel -->
+    <div class="left-panel">
+      <div class="bubble bubble-1"></div>
+      <div class="bubble bubble-2"></div>
+      <div class="bubble bubble-3"></div>
+      <div class="bubble bubble-4"></div>
+
+      <a href="/" class="back-btn" aria-label="Go back">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+      </a>
+
+      <div class="left-content">
+        <div class="brand">
+          <div class="brand-icon">🎓</div>
+          <span>ScholarHub</span>
+        </div>
+
+        <h1 class="left-heading">
+          Join <span class="highlight">ScholarHub</span> Today
+        </h1>
+        <p class="left-text">
+          Create your free account to discover scholarships, track your
+          applications, and get one step closer to funding your education.
+        </p>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <p class="stat-value">250+</p>
+            <p class="stat-label">Scholarships</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-value">5,000+</p>
+            <p class="stat-label">Students</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-value">₹50,000</p>
+            <p class="stat-label">Avg. Award</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right panel -->
+    <div class="right-panel">
+      <div class="form-container">
+
+        <div class="mobile-brand">
+          <div class="brand-icon-sm">🎓</div>
+          <span>ScholarHub</span>
+        </div>
+
+        <p class="eyebrow">Get started</p>
+        <h2 class="form-heading">Create your account</h2>
+
+        <form class="register-form" action="/register" method="POST" id="registerForm">
+
+          <div class="field">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+          </div>
+
+          <div class="field">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          </div>
+
+          <div class="field">
+            <label for="password">Password</label>
+            <div class="password-wrap">
+              <input type="password" id="password" name="password" placeholder="Create a password" required />
+              <button type="button" class="toggle-password" id="togglePassword" aria-label="Show password">
+                <svg id="eyeIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <label class="terms">
+            <input type="checkbox" id="agree" name="agree" required />
+            <span>
+              I agree to the <a href="/terms">Terms of Service</a> and
+              <a href="/privacy">Privacy Policy</a>
+            </span>
+          </label>
+          <button type="button" onclick="window.location.href='/findscholarship'" class="submit-btn">
+              Sign up
+          </button>
+        </form>
+
+        <div class="divider">
+          <span></span>
+          <p>Sign up with</p>
+          <span></span>
+        </div>
+
+        <div class="social-row">
+          <button class="social-btn" aria-label="Sign up with Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+          </button>
+          <button class="social-btn" aria-label="Sign up with Twitter">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22 5.92c-.74.33-1.53.55-2.36.65a4.12 4.12 0 0 0 1.8-2.27c-.8.47-1.68.82-2.62 1.01a4.1 4.1 0 0 0-7 3.74A11.65 11.65 0 0 1 3.4 4.9a4.1 4.1 0 0 0 1.27 5.47c-.67-.02-1.3-.2-1.85-.5v.05a4.1 4.1 0 0 0 3.29 4.02c-.6.16-1.24.19-1.9.07a4.11 4.11 0 0 0 3.83 2.85A8.23 8.23 0 0 1 2 18.57 11.6 11.6 0 0 0 8.29 20.5c7.55 0 11.68-6.26 11.68-11.68l-.01-.53c.8-.58 1.5-1.3 2.04-2.12v-.25z"/></svg>
+          </button>
+          <button class="social-btn" aria-label="Sign up with Google">
+            <svg width="18" height="18" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18A10.96 10.96 0 0 0 1 12c0 1.77.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+          </button>
+          <button class="social-btn" aria-label="Sign up with Apple">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16.365 1.43c0 1.14-.44 2.14-1.32 2.99-.88.85-2.02 1.31-3.13 1.19-.13-1.15.4-2.31 1.24-3.09.84-.79 2.28-1.36 3.21-1.09zM20.9 17.02c-.5 1.16-1.09 2.24-1.82 3.24-.99 1.36-1.8 2.3-2.44 2.82-.9.75-1.87 1.14-2.92 1.16-.75.02-1.65-.21-2.7-.71-1.05-.5-2.02-.72-2.9-.7-.94.02-1.86.24-2.77.7-.9.46-1.63.7-2.19.72-.98.04-1.98-.36-2.97-1.19-.7-.58-1.55-1.58-2.55-2.98-1.07-1.5-1.95-3.26-2.64-5.28-.74-2.18-1.11-4.29-1.11-6.33 0-2.34.5-4.36 1.5-6.05a8.9 8.9 0 0 1 3.15-3.19 8.44 8.44 0 0 1 4.26-1.21c.87 0 1.99.28 3.38.85 1.38.57 2.27.85 2.65.85.28 0 1.26-.33 2.94-1 1.58-.62 2.92-.88 4.01-.78 2.96.24 5.19 1.41 6.68 3.51-2.65 1.6-3.96 3.84-3.94 6.71.02 2.24.82 4.1 2.4 5.57.71.68 1.51 1.2 2.4 1.57-.19.56-.4 1.1-.62 1.62z"/></svg>
+          </button>
+        </div>
+
+        <p class="login-link">
+          Already have an account? <a href="/login">Login</a>
+        </p>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    const toggleBtn = document.getElementById('togglePassword');
+    const passwordInput = document.getElementById('password');
+    const eyeIcon = document.getElementById('eyeIcon');
+
+    toggleBtn.addEventListener('click', () => {
+      const isPassword = passwordInput.type === 'password';
+      passwordInput.type = isPassword ? 'text' : 'password';
+      eyeIcon.innerHTML = isPassword
+        ? '<path d="M17.94 17.94A10.94 10.94 0 0 1 12 20c-7 0-11-8-11-8a21.8 21.8 0 0 1 5.06-6.94M9.9 4.24A10.94 10.94 0 0 1 12 4c7 0 11 8 11 8a21.8 21.8 0 0 1-3.22 4.44M1 1l22 22"></path><path d="M14.12 14.12a3 3 0 1 1-4.24-4.24"></path>'
+        : '<path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle>';
+    });
+  </script>
+
+</body>
+</html>

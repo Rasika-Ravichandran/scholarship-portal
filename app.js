@@ -26,10 +26,20 @@ app.get("/contact",(req,res)=>{
     });
 });
 app.get("/scholarships",(req,res)=>{
-    res.render("scholarships", {
-        activePage: "scholarships"
+    res.render("login", {
+        activePage: "login"
     });
 });
+app.get("/findscholarship",(req,res)=>{
+    res.render("scholarships",{
+        activePage:"scholarships"
+    })
+})
+app.get("/register",(req,res)=>{
+    res.render("register",{
+        activePage:"register"
+    })
+})
 
 app.listen(port,()=>{
     console.log(`Server is running at port ${port}`)
