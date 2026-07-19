@@ -448,3 +448,30 @@ body {
     padding: 40px 30px;
   }
 }
+/* ============ LOGIN MESSAGE ============ */
+
+.login-alert {
+  background: #fef3c7;
+  border: 1px solid #f59e0b;
+  border-radius: 12px;
+  padding: 12px 15px;
+  margin-bottom: 18px;
+  text-align: center;
+  font-size: 13px;
+  color: #92400e;
+}
+
+.login-alert p {
+  margin: 0 0 8px;
+  font-weight: 500;
+}
+
+.login-alert a {
+  color: var(--violet-mid);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.login-alert a:hover {
+  text-decoration: underline;
+}

@@ -82,11 +82,26 @@
         </div>
         <h2 class="login-title">USER LOGIN</h2>
         <p class="login-subtitle">Welcome back! Please login to continue.</p>
+        <% if (message) { %>
+
+          <div class="login-alert">
+
+              <p>
+                  <%= message %>
+              </p>
+
+              <a href="/register?email=<%= encodeURIComponent(email) %>">
+                  Create a new account
+              </a>
+
+          </div>
+
+          <% } %>
 
         <form action="/login" method="POST" class="login-form">
           <div class="input-group">
             <span class="input-icon">👤</span>
-            <input type="text" name="username" placeholder="Username / Email" required />
+            <input type="email" name="email" placeholder="Email" required/>
           </div>
 
           <div class="input-group">
@@ -102,9 +117,9 @@
             <a href="/forgot-password" class="forgot-link">Forgot password?</a>
           </div>
 
-          <button type="button" onclick="window.location.href='/findscholarship'" class="btn btn-login w-100">
-              Login
-          </button>
+          <button type="submit" class="btn btn-login w-100">
+            Login
+        </button>
         </form>
 
         <div class="divider"><span>OR</span></div>
